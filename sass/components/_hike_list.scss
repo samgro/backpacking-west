@@ -1,0 +1,8 @@
+.hike-list {
+  padding-bottom: $base-line-height;
+  @include adjust-font-size-to(21px);
+  
+  a:after {
+    content: ' »';
+  }
+}

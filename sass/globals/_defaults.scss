@@ -1,0 +1,9 @@
+* {
+  @include box-sizing(border-box);
+}
+
+@include establish-baseline;
+
+body {
+  background: $body-background;
+}
