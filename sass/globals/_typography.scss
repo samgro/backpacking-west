@@ -4,12 +4,12 @@
 //  line-height: $baseline;
   
   h1, h2, h3 {
-    color: $header-color;
+//    color: $header-color;
     font-weight: 900;
     @include text-shadow(0 1px 0 $header-text-shadow-color);
   }
   h2 {
-    @include adjust-font-size-to(36px);
+//    @include adjust-font-size-to();
   }
   a {
     &,

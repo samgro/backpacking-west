@@ -1,9 +1,22 @@
+@import 'globals/colors';
+
 * {
   @include box-sizing(border-box);
 }
 
+// Compass Vertical Rhythm
+$round-to-nearest-half-line: true;
+$relative-font-sizing: false;
+@import 'compass/typography';
 @include establish-baseline;
 
 body {
   background: $body-background;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
 }
