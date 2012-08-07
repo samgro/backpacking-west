@@ -1,23 +1,12 @@
 .reading {
   color: $reading-text-color;
-//  font-size: $normal-font-size;
-//  line-height: $baseline;
-  
-  h1, h2, h3 {
-//    color: $header-color;
-    font-weight: 900;
-    @include text-shadow(0 1px 0 $header-text-shadow-color);
-  }
-  h2 {
-//    @include adjust-font-size-to();
-  }
+
   a {
     &,
     &:visited,
     &:hover,
     &:focus {
       color: $link-color;
-      border-bottom: 1px solid $link-color;
       text-decoration: none;
       @include transition-property(all);
       @include transition-duration(0.2s);
@@ -25,7 +14,6 @@
     &:hover,
     &:focus {
       color: $link-hover-color;
-      border-bottom-color: $link-hover-color;
     }
   }
   p {
@@ -37,13 +25,4 @@
   em {
     font-style: italic;
   }
-//  h1 {
-//    font-size: $x-large-font-size;
-//    line-height: $baseline * 2;
-//    padding-bottom: $baseline;
-//  }
-//  h2 {
-//    font-size: $x-large-font-size;
-//    padding-bottom: $baseline * 2;
-//  }
 }

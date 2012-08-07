@@ -1,4 +1,5 @@
-/* line 17, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+@charset "UTF-8";
+/* line 17, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,47 +21,90 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
+}
+
+/* Disable shadow effects in textfield inputs */
+/* line 14, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/mobile_reset-0.1.2/stylesheets/_mobile_reset.scss */
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="week"],
+input[type="url"],
+textarea {
+  -webkit-appearance: none;
+}
+
+/* line 18, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/mobile_reset-0.1.2/stylesheets/_mobile_reset.scss */
+body {
+  /* Disable webkit tap-highlighting on non-links */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  /* Disable text resizing on orientation change */
+  -webkit-text-size-adjust: none;
+}
+
+/* Enable webkit tap-highlighting on links and inputs */
+/* line 30, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/mobile_reset-0.1.2/stylesheets/_mobile_reset.scss */
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: #999;
+  tap-highlight-color: #999;
+}
+
+/* Add this class to any links that are overridden by Javascript
+   In jQuery: $('a[href="#"]').addClass('no-touch-callout'); */
+/* line 37, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/mobile_reset-0.1.2/stylesheets/_mobile_reset.scss */
+.no-touch-callout {
+  -webkit-touch-callout: none;
 }
 
 /* line 3, ../sass/globals/_defaults.scss */
@@ -70,12 +114,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
 }
 
-/* line 61, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 61, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 100%;
 }
 
-/* line 64, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 64, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 16px;
   line-height: 24px;
@@ -98,15 +142,9 @@ a:focus {
 .reading {
   color: #575341;
 }
-/* line 6, ../sass/globals/_typography.scss */
-.reading h1, .reading h2, .reading h3 {
-  font-weight: 900;
-  text-shadow: 0 1px 0 #ebeae5;
-}
-/* line 18, ../sass/globals/_typography.scss */
+/* line 8, ../sass/globals/_typography.scss */
 .reading a, .reading a:visited, .reading a:hover, .reading a:focus {
   color: #c37143;
-  border-bottom: 1px solid #c37143;
   text-decoration: none;
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -117,20 +155,19 @@ a:focus {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 26, ../sass/globals/_typography.scss */
+/* line 15, ../sass/globals/_typography.scss */
 .reading a:hover, .reading a:focus {
   color: #c8a153;
-  border-bottom-color: #c8a153;
 }
-/* line 31, ../sass/globals/_typography.scss */
+/* line 19, ../sass/globals/_typography.scss */
 .reading p {
   padding-bottom: 24px;
 }
-/* line 34, ../sass/globals/_typography.scss */
+/* line 22, ../sass/globals/_typography.scss */
 .reading strong {
   font-weight: bold;
 }
-/* line 37, ../sass/globals/_typography.scss */
+/* line 25, ../sass/globals/_typography.scss */
 .reading em {
   font-style: italic;
 }
@@ -142,12 +179,12 @@ a:focus {
   box-sizing: border-box;
 }
 
-/* line 61, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 61, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 100%;
 }
 
-/* line 64, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 64, ../../.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 16px;
   line-height: 24px;
@@ -202,15 +239,22 @@ body {
 }
 
 /* line 2, ../sass/pages/_index.scss */
+.index header {
+  text-align: center;
+}
+/* line 5, ../sass/pages/_index.scss */
 .index h1 {
   font-size: 72px;
   line-height: 84px;
   text-transform: uppercase;
   padding: 12px;
-  text-align: center;
-  color: #575341;
 }
-/* line 19, ../sass/pages/_index.scss */
+/* line 10, ../sass/pages/_index.scss */
+.index .description {
+  font-style: italic;
+  padding-bottom: 24px;
+}
+/* line 24, ../sass/pages/_index.scss */
 .index .hike-list li {
   position: relative;
   float: left;
@@ -237,25 +281,26 @@ body {
   -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-/* line 32, ../sass/pages/_index.scss */
+/* line 37, ../sass/pages/_index.scss */
 .index .hike-list li:hover {
+  border-color: rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 8px 3px rgba(70, 70, 70, 0.6);
   -moz-box-shadow: 0 0 8px 3px rgba(70, 70, 70, 0.6);
   box-shadow: 0 0 8px 3px rgba(70, 70, 70, 0.6);
 }
-/* line 35, ../sass/pages/_index.scss */
+/* line 41, ../sass/pages/_index.scss */
 .index .hike-list li:hover .frame {
   -webkit-box-shadow: inset 0 112px 106px -106px rgba(255, 255, 255, 0.8);
   -moz-box-shadow: inset 0 112px 106px -106px rgba(255, 255, 255, 0.8);
   box-shadow: inset 0 112px 106px -106px rgba(255, 255, 255, 0.8);
 }
-/* line 42, ../sass/pages/_index.scss */
+/* line 48, ../sass/pages/_index.scss */
 .index .hike-list .bg-image {
   position: absolute;
   width: 286px;
   height: 212px;
 }
-/* line 47, ../sass/pages/_index.scss */
+/* line 53, ../sass/pages/_index.scss */
 .index .hike-list .caption {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.7)));
   background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.7));
@@ -264,12 +309,13 @@ body {
   background: linear-gradient(top, transparent, rgba(0, 0, 0, 0.7));
   position: absolute;
   bottom: 0;
+  width: 100%;
   padding: 12px;
   padding-top: 24px;
   color: white;
   text-shadow: 1px 1px 2px black;
 }
-/* line 56, ../sass/pages/_index.scss */
+/* line 63, ../sass/pages/_index.scss */
 .index .hike-list .frame {
   position: absolute;
   height: 212px;
@@ -283,13 +329,13 @@ body {
   -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-/* line 69, ../sass/pages/_index.scss */
+/* line 70, ../sass/pages/_index.scss */
 .index .hike-list h2 {
   font-size: 21px;
   line-height: 1.1;
   font-weight: bold;
 }
-/* line 74, ../sass/pages/_index.scss */
+/* line 75, ../sass/pages/_index.scss */
 .index .hike-list .subtitle {
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;

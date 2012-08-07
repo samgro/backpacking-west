@@ -1,10 +1,15 @@
 .index {
+  header {
+    text-align: center;
+  }
   h1 {
     @include adjust-font-size-to(72px);
     text-transform: uppercase;
     padding: $small-spacing;
-    text-align: center;
-    color: $reading-text-color;
+  }
+  .description {
+    font-style: italic;
+    padding-bottom: $base-line-height;
   }
   .hike-list {
     $item-margin: $small-spacing;
@@ -30,6 +35,7 @@
       @include transition-property(all);
       @include transition-duration(0.4s);
       &:hover {
+        border-color: rgba(0,0,0,0.5);
         @include box-shadow(0 0 8px 3px rgba(70,70,70,0.6));
         
         .frame {
@@ -48,6 +54,7 @@
       @include background(linear-gradient(top, transparent, rgba(0,0,0,.7)));
       position: absolute;
       bottom: 0;
+      width: 100%;
       padding: $small-spacing;
       padding-top: $small-spacing * 2;
       color: $photo-caption-color;
@@ -59,12 +66,6 @@
       width: $picture-width;
       @include transition-property(all);
       @include transition-duration(0.4s);
-      
-      &:hover {
-
-//        background: rgba(255,255,255,0.4);
-      }
-//      background: rgba(0,0,0,0.4);
     }
     h2 {
       font-size: 21px;
@@ -76,27 +77,4 @@
       @include adjust-font-size-to(16px);
     }
   }
-//  header {
-//    background: url('/images/header-bg.jpg');
-//    height: 240px;
-//    width: 768px;
-//    position: relative;
-//    @include border-top-radius(4px);
-//    @include box-shadow( 0 1px 2px rgba(0, 0, 0, .2) );
-//    
-//    h1 {
-//      color: $logo-color;
-//      color: $logo-color-alpha;
-//      font-size: 84px;
-//      line-height: 1;
-//      text-align: center;
-//      position: absolute;
-//      bottom: 0;
-//      left: 0;
-//      width: 100%;
-//      padding-bottom: $base-line-height;
-//      @include background( linear-gradient( top, transparent, rgba(0,0,0,0.7) ) );
-//      @include text-shadow( 0 2px 0 rgba(0, 0, 0, 0.5) );
-//    }
-//  }
 }
