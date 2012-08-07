@@ -1,4 +1,5 @@
 body {
-  width: $body-width;
+  max-width: $body-width;
+  min-width: 320px;
   margin: $base-line-height auto;
 }

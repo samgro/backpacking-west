@@ -1,11 +1,11 @@
 .index {
   header {
     text-align: center;
+    padding: $small-spacing;
   }
   h1 {
     @include adjust-font-size-to(72px);
     text-transform: uppercase;
-    padding: $small-spacing;
   }
   .description {
     font-style: italic;
@@ -75,6 +75,38 @@
     .subtitle {
       color: rgba(255,255,255,0.8);
       @include adjust-font-size-to(16px);
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .index {
+    header {
+      text-align: left;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .index {
+    h1 {
+      @include adjust-font-size-to(60px);
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .index {
+    h1 {
+      @include adjust-font-size-to(45px);
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .index {
+    h1 {
+      @include adjust-font-size-to(32px);
     }
   }
 }
